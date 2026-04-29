@@ -1,6 +1,6 @@
 # 📜 Student Report Card
 
-A React-based Student Report Card application built as **Web Development 2 — Assignment 3**. The app allows users to view, add, and update student scores with a live pass/fail status. Styled with a **Dark Academia** aesthetic theme.
+A React-based Student Report Card application built as **Web Development 2 — Assignment 3**. The app allows users to view, add, and update student scores with a live pass/fail status.
 
 ---
 
@@ -10,7 +10,6 @@ A React-based Student Report Card application built as **Web Development 2 — A
 - **Add New Students** — Add students dynamically using the input form.
 - **Edit Scores Inline** — Update any student's score directly from the table; status updates in real-time.
 - **Class Summary Stats** — Automatically calculates total students, pass/fail count, and average marks.
-- **Dark Academia Theme** — Styled with a scholarly aesthetic using Cinzel Decorative & Lora fonts, rich dark tones, and gold accents.
 - **Responsive Design** — Works on desktop, tablet, and mobile screens.
 
 ---

@@ -1,0 +1,90 @@
+/* ===== Dark Academia — Global Reset & Base ===== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ── Palette ── */
+  --da-bg-deep:      #1a1410;
+  --da-bg:           #2b2118;
+  --da-bg-card:      #3a2e24;
+  --da-bg-hover:     #4a3c30;
+  --da-border:       #5c4a3a;
+  --da-border-light: #6e5a48;
+  --da-text:         #f0e6d6;
+  --da-text-muted:   #bfae97;
+  --da-gold:         #c9a84c;
+  --da-gold-light:   #dbbf6a;
+  --da-burgundy:     #8b3a3a;
+  --da-green:        #5a8a5a;
+  --da-green-light:  #7cb37c;
+  --da-red:          #c25050;
+  --da-red-light:    #d47070;
+  --da-ivory:        #faf3e6;
+  --da-parchment:    #e8dcc8;
+
+  /* ── Typography ── */
+  --font-heading: 'Cinzel Decorative', 'Playfair Display', Georgia, serif;
+  --font-body:    'Lora', Georgia, serif;
+
+  /* ── Spacing ── */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* ── Borders & Shadows ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-gold: 0 0 20px rgba(201, 168, 76, 0.08);
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--da-bg-deep);
+  color: var(--da-text);
+  line-height: 1.7;
+  min-height: 100vh;
+
+  /* subtle parchment-grain texture overlay */
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.03) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(139, 58, 58, 0.04) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: var(--da-gold);
+  color: var(--da-bg-deep);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--da-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--da-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--da-border-light);
+}
